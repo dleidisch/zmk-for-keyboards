@@ -29,8 +29,3 @@
         compatible = "zmk,battery-nrf-vddh";
     };
 };
-
-/* Move nice_view CS to pro_micro 0 (P0.08) to avoid conflict with LED data on P0.06 */
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
