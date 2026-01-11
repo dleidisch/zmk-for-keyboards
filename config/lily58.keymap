@@ -85,3 +85,8 @@
         extra5 { status = "reserved"; };
     };
 };
+
+/* nice_view CS - try D0 (P0.08) first since D1 (P0.06) is used by RGB LEDs */
+&nice_view_spi {
+    cs-gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
+};
